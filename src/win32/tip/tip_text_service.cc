@@ -327,11 +327,6 @@ struct PreserveKeyItem {
 
 constexpr PreserveKeyItem kPreservedKeyItems[] = {
     {kTipPreservedKey_Kanji,
-     {VK_OEM_3, TF_MOD_ALT},
-     VK_OEM_3,
-     &kTipKeyTilde[0],
-     std::size(kTipKeyTilde) - 1},
-    {kTipPreservedKey_Kanji,
      {VK_KANJI, TF_MOD_IGNORE_ALL_MODIFIER},
      // KeyEventHandler maps VK_KANJI to KeyEvent::NO_SPECIALKEY instead of
      // KeyEvent::KANJI because of an anomaly of IMM32 behavior. So, in TSF
